@@ -1,0 +1,563 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> ADJOSEC X - MART </title>
+    <link rel="shortcut icon" href="AIL.png" type="image/x-icon">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+
+        header{
+            width: 100%;
+            height: 220px;
+            text-align: center;
+        }
+    
+        header img{
+            width: 200px;
+        }
+    
+
+       header marquee b{
+           font-size: 80px; 
+           font-family: Arial, Helvetica, sans-serif; 
+           color: aqua; 
+
+       }
+    
+        nav{
+            width: 100%;
+            height: 65px;
+            background-color: rgb(57, 4, 107);
+            text-align: center;
+        }
+
+        nav li{
+            display: inline-block;
+            margin: 10px;
+        }
+
+        nav a{
+            text-decoration: none;
+            font-family: Arial, Helvetica, sans-serif;
+            color: yellow;
+            font-size: 45px;
+            transition: 1s;
+        }
+
+        nav a:hover{
+            color: orangered;
+        }
+
+        h1{
+            font-size: 50px;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            text-align: center;
+            color: green;
+        }
+
+        .about-main{
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+    
+        .about-content-one{
+            width: 350px;
+        }
+
+        .about-content-one img{
+            width: 100%;
+        }
+
+        .about-content-two{
+            width: 700px;
+            margin: 10px;
+        }
+
+        .about-content-two p{
+            font-size: 22px;
+        }
+
+        .about-content-two ul{
+            margin-left: 30px;
+        }
+
+        .about-content-two li{
+            font-size: 18px;
+            margin-left: 20px;
+            font-family: Arial, Helvetica, sans-serif;
+            text-align: left;
+        }
+
+        h1{
+            text-align: center;
+            font-size: 55px;
+            color: green;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        .product{
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
+        .product-content{
+            width: 300px;
+            height: 250px;
+            margin: 10px;
+        }
+
+        .product-content img{
+            width: 100%;
+            height: 95%;
+        }
+
+        .product-content p{
+            font-size: 20px;
+            font-family: Arial, Helvetica, sans-serif;
+            text-align: center;
+        }
+
+        .gallery{
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
+        .gallery-content{
+            width: 290px;
+            height: 200px;
+            margin: 10px;
+            text-align: center;
+        }
+
+        .gallery-content img{
+            width: 100%;
+            height: 95%;
+        }
+
+        .gallery-content p{
+            font-size: 20px;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        
+        .contact-main{
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+    
+        .contact-content-one{
+            width: 500px;
+        }
+
+        .contact-content-one img{
+            width: 100%;
+        }
+
+        .contact-content-two{
+            width: 600px;
+            margin: 20px;
+        }
+
+        .contact-content-two p{
+            font-size: 20px;
+        }
+
+        .contact-content-two a{
+            text-decoration: none;
+            color: blue;
+        }
+
+        footer{
+            width: 100%;
+            height: 60px;
+            background-color: black;
+            text-align: center;
+        }
+
+        footer li{
+            font-size: 30px;
+            display: inline-block;
+            color: white;
+            margin: 10px;
+        }
+
+        footer a{
+            text-decoration: none;
+            color: white;
+        }
+    
+    @media screen and (min-width:320px) and (max-width:700px) {
+            header{
+                height: 180px;
+            }
+            
+            header marquee b{
+
+             font-size: 35px; 
+            }
+            
+            nav{
+                height: 35px;
+            }
+
+            nav li a{
+                font-size: 10px;
+            }
+        
+            h1{
+                font-size: 30px;
+            }
+            
+            .about-content-one{
+                width: 350px;
+            }
+            
+            .about-content-two p{
+                margin-left: 10px;
+                font-size: 20px;
+            }
+            
+            .about-content-two ul li{
+                margin-left: 30px;
+                font-size: 20px;
+            }
+            
+            .about-content-two ol li{
+                margin-left: 20px;
+                font-size: 15px;
+            }
+         
+
+            .product-content{
+                width: 350px;
+                height: 150px;
+                text-align: center;
+                margin: 10px;
+            }
+
+            .product-content img{
+                width: 100%;
+            }
+
+            .product-content p{
+                font-size: 25px;
+            }
+
+            .gallery-content{
+                width: 170px;
+                height: 150px;
+                margin: 5px;
+            }
+
+            .gallery-content img{
+                width: 100%;
+            }
+
+            .gallery-content p{
+                text-align: center;
+                font-size: 15px;
+            }
+
+            .contact-content-one{
+                width: 350px;
+            }
+        
+            .contact-content-two{
+                width: 350px;
+                margin: 5px;
+                text-align: center;
+            }
+            
+            .contact-content-two p{
+                font-size: 20px;
+            }
+        
+            .contact-content-two b{
+                font-size: 23px;
+            }
+        
+            .contact-content-two a{
+                font-size: 25px;
+            }
+        
+            footer{
+                height: 30px;
+            }
+
+            footer li a{
+            font-size: 10px;
+            } 
+
+            footer li{
+            font-size: 6px;
+            }
+
+        }
+
+    </style>
+
+</head>
+<body>
+    <header>
+       <a href=""> 
+          <img src="AIL.png"> 
+          <marquee behavior="alternate" direction="right"> <b> TRIPLE X - MART </b> </marquee>
+       </a>
+    </header>
+    <br>
+    <nav data-aos="zoom-in">
+        <ul>
+            <li> <a href="index.html"> Home </a></li>
+            <li> <a href="#product"> Our Products </a></li>
+            <li> <a href="#gallery"> Gallery </a></li>
+            <li> <a href="#About-Heading"> About Us </a></li>
+            <li> <a href="#Contact-Heading"> Contact Us </a></li>
+        </ul>
+    </nav>
+    <img src="Supermarket Banner.png" alt="" style="width: 100%;">
+    <br><br>
+    <h1 id="About-Heading"> ABOUT US </h1>
+    <br><br>
+    <div class="about-main" data-aos="fade-right">
+        <div class="about-content-one">
+            <img src="Gym 2.jpg" alt="">
+        </div>
+        <div class="about-content-two" data-aos="fade-left">
+            <h2 style="font-family: Arial, Helvetica, sans-serif; text-align: center; color: deeppink;"> @ X-MART SUPERMARKET </h2>
+            <p style="font-family: Arial, Helvetica, sans-serif;"> 
+                We are the <b> Supermarket </b> branch of <a href="index.html" style="text-decoration: none;"> ADJOSEC INVESTMENT LIMITED </a> whose priority is serving customers at the best of satisfactions. <br> 
+                We are an annexation, dealing with varieties of companies' products, including but not limited to: <br>
+                <ul>
+                    <li> 
+                        Guinness Products example:
+                        <ol>
+                            <li> Guinness (Bottle & Can) </li>
+                            <li> Malt Bottle (Bottle, Can, & Pet) </li>
+                            <li> Orijin (Bitters & Beer) </li>
+                            <li> Smirnoff (Spirit, Bottle & Can) </li>
+                            <li> Star Beer </li>
+                            <li> Gulder </li>
+                            <li> Abc Bert </li>
+                        </ol>
+                    </li>                        
+                    <li> 
+                        Club Products, example:
+                        <ol>
+                            <li> Club Beers (Bottle - Large & Small) </li>
+                            <li> Eagle Beers (Red & Black) </li>
+                            <li> Shandy Beers (Large & Small) </li>
+                            <li> Beta Malt (Bottle & Pet) </li>
+                        </ol>                        
+                    </li>
+                    <li> Kasapreko Products (Bottles & Sachets, Alcohol & Non-Alcohol) </li>
+                    <li> GIHOC Products (Bottles & Sachets) </li>
+                    <li> Multi Pac Limited (Soft-Drinks & Water) </li>
+                    <li> TWI Company Limited (Soft-Drinks & Water) </li>
+                    <li> And Many More... </li>
+                </ul>
+            </p>
+        </div>
+    </div>
+    <br><br>
+    <h1 id="product"> OUR PRODUCTS </h1>
+    <div class="product" data-aos="zoom-out">
+        <div class="product-content">
+            <img src="" alt="">
+            <p> Four Special Wines </p>
+        </div>
+        <div class="product-content">
+            <img src="" alt="">
+            <p> Condor Peak Wines  </p>
+        </div>
+        <div class="product-content">
+            <img src="" alt="">
+            <p> 8PM Whiskies </p>
+        </div>
+        <div class="product-content">
+            <img src="" alt="">
+            <p> Afribull 1L & 50ml </p>
+        </div>
+        <div class="product-content">
+            <img src="" alt="">
+            <p> Faxe Can Beer </p>
+        </div>
+        <div class="product-content">
+            <img src="" alt="">
+            <p> Can Don Simon Juice </p>
+        </div>
+        <div class="product-content">
+            <img src="" alt="">
+            <p> Don Simon Juice </p>
+        </div>
+        <div class="product-content">
+            <img src="" alt="">
+            <p> Aloe Vera Juice </p>
+        </div>
+        <div class="product-content">
+            <img src="" alt="">
+            <p> Old Admiral Brandies </p>
+        </div>
+        <div class="product-content">
+            <img src="" alt="">
+            <p> Jack Danies Whiskies </p>
+        </div>
+        <div class="product-content">
+            <img src="" alt="">
+            <p> JP Chenet Champagnes </p>
+        </div>
+        <div class="product-content">
+            <img src="" alt="">
+            <p> Festival/Eva Champagnes </p>
+        </div>
+    </div>
+
+<br><br>
+<h1 id="gallery"> GALLERY </h1>
+    <div class="gallery" data-aos="zoom-in">
+        <div class="gallery-content">
+            <img src="Sangria Champagne.jpg" alt="">
+            <p> Don Simon Sangria Champagne </p>
+        </div>
+        <div class="gallery-content">
+            <img src="Lordson Gin.jpg" alt="">
+            <p> Lordson's Dry Gin </p>
+        </div>
+        <div class="gallery-content">
+            <img src="Don Luciano Champagne.jpg" alt="">
+            <p> Don Luciano Champagne </p>
+        </div>
+        <div class="gallery-content">
+            <img src="Cronier Champagne.jpg" alt="">
+            <p> Cronier Champagne </p>
+        </div>
+        <div class="gallery-content">
+            <img src="Cronier Champagne.jpg" alt="">
+            <p> Condor Peak Wines </p>
+        </div>
+        <div class="gallery-content">
+            <img src="Four Special Wine.jpg" alt="">
+            <p> Four Special Wine </p>
+        </div>
+        <div class="gallery-content">
+            <img src="Eva Champagne.jpg" alt="">
+            <p> Eva Champagne </p>
+        </div>
+        <div class="gallery-content">
+            <img src="Jelzin Vodka 700ml.jpg" alt="">
+            <p> Jelzin Vodka 700ml </p>
+        </div>
+        <div class="gallery-content">
+            <img src="Jagermeister 100ml.jpg" alt="">
+            <p> Jagermeister 100ml </p>
+        </div>
+        <div class="gallery-content">
+            <img src="Jagermeister.jpg">
+            <p> Jagermeister - 40ml to 1.75L </p>
+        </div>
+        <div class="gallery-content">
+            <img src="Old Admiral 750ml.jpg" alt="">
+            <p> Old Admiral 750ml </p>
+        </div>
+        <div class="gallery-content">
+            <img src="Golden Ice.jpg" alt="">
+            <p> Golden Ice Champagne </p>
+        </div>
+        <div class="gallery-content">
+            <img src="Four Special Flyer.jpg" alt="">
+            <p> Best Taste of Special </p>
+        </div>
+        <div class="gallery-content">
+            <img src="8 PM BLack 750ml.jpg" alt="">
+            <p> 8 PM Black 750ml </p>
+        </div>
+        <div class="gallery-content">
+            <img src="JP Chenet 750ml.jpg" alt="">
+            <p> JP Chenet 750ml </p>
+        </div>
+        <div class="gallery-content">
+            <img src="XXX Van 2.jpg" alt="">
+            <p> ADJOSEC TRUCK </p>
+        </div>
+        <div class="gallery-content">
+            <img src="XXX Van 3.jpg" alt="">
+            <p> ADJOSEC VAN </p>
+        </div>
+        <div class="gallery-content">
+            <img src="XXX Van 4.jpg" alt="">
+            <p> ADJOSEC VAN </p>
+        </div>
+        <div class="gallery-content">
+            <img src="Sangria Champagne.jpg" alt="">
+            <p> Sangria Champagne </p>
+        </div>
+        <div class="gallery-content">
+            <img src="8 PM BLack 750ml.jpg" alt="">
+            <p> 8 PM Black 750ml </p>
+        </div>
+        <div class="gallery-content">
+            <img src="8 PM Flyer.jpg" alt="">
+            <p> 8 PM 750ml </p>
+        </div>
+        <div class="gallery-content">
+            <img src="Lordson Gin.jpg" alt="">
+            <p> Lordson Dry Gin </p>
+        </div>
+        <div class="gallery-content">
+            <img src="X-Mart Wines.jpg" alt="">
+            <p> Varieties of Tecquila </p>
+        </div>
+        <div class="gallery-content">
+            <img src="Mozeco Champagne.jpg" alt="">
+            <p> Nozeco Champagne </p>
+        </div>
+    </div>
+    <br><br>
+    <h1 id="Contact-Heading"> CONTACT X - MART </h1>
+    <br>
+    <div class="contact-main">
+        <div class="contact-content-one" data-aos="fade-right">
+            <img src="Director 1.jpg">
+        </div>
+        <div class="contact-content-two" data-aos="fade-left">
+            <p style="font-family: Arial, Helvetica, sans-serif;">
+                Do you want to get in contact with us? <br>
+                We are an inch away from you. 
+                <br><br>
+                <b> Contact Us Direct/Whatsapp: </b> <br> 
+                <a href="#"> +233 202 168 170 </a> <br>  
+                <a href="#"> +233 533 480 202 </a>
+                <br><br>
+                <b> Email Us at: </b> <br> 
+                <a href="#"> triplex-mart@gmail.com </a>
+            </p>
+
+        </div>
+    </div>
+<br><br>
+
+<footer>
+  <ul>
+    <li> <a href="#About-Heading"> About </a> </li>
+    <li> <a href="Director.html"> Management </a> </li>
+    <li> <a href="Contact.html"> Contact </a> </li>
+    <li> <a href="#"> &2025 Adjosec Investment Ltd. </a> </li>
+  </ul>  
+</footer>
+    
+
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>  
+  <script>
+  AOS.init();
+</script>
+</body>
+</html>

@@ -1,0 +1,872 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> ADJOSEC INVESTMENT LIMITED </title>
+    <link rel="shortcut icon" href="AIL.png" type="image/x-icon">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+        }
+
+        header{
+          width: 100%;   
+          text-align: center;
+        }
+
+        header img{
+          width: 200px;
+        }
+    
+        header marquee{
+            font-size: 65px;
+            color: deeppink;
+        }
+    
+        nav{
+            width: 100%;
+            text-align: center;
+            background-color: rgba(41, 71, 71, 0.336);
+            height: 70px;
+        }    
+           
+        .navbar-brand{
+          font-size: 65px;
+          color: green;
+          transition: 1s;
+        }
+    
+        .navbar-brand:hover{
+            color: rgb(226, 72, 213);
+        }
+
+        #navbarText a{
+            font-size: 30px;
+            color: purple;
+            margin: 5px;
+            transition: 1s;
+        }
+
+        #navbarText a:hover{
+            color: red;
+        }
+
+        nav input{
+          padding: 5px;
+          width: 220px;
+          margin-top: 20px;
+          border: 1px solid gray;
+          border-radius: 5px;
+          background-color: yellow;
+        }
+    
+        .dropdown{
+            width: 100%;           
+        }
+
+        .dropdown button{
+            padding: 20px;
+            font-size: 40px;
+            text-align: center;
+            color: blue;
+            background-color: transparent;
+            border: none;
+        }
+    
+        .dropdown-menu a{
+            font-size: 60px;
+            text-decoration: none;
+            color: green;
+        }
+
+        .carousel-inner img{
+          width: 100%;
+          height: 550px;
+      
+        }
+
+        h1{
+            text-align: center;
+            color: green;
+            font-size: 55px;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+    
+        .about-one{
+            width: 450px;
+            margin: 10px;
+        }
+    
+        .about-one img{
+            width: 100%;
+        }
+
+        .about-two{
+          width: 650px;
+          margin: 5px;
+        }
+
+        .about-two p{
+          font-size: 23px;
+        }
+    
+        .rooms{
+            display: flex; 
+            flex-wrap: wrap; 
+            justify-content: center;
+        }
+    
+        .sub-rooms{
+            font-size: 50px;
+            margin: 5px;
+            transition: 1s;
+        }
+
+        .sub-rooms:hover{
+          transform: scale(1.1);
+        }
+
+        .sub-rooms a{
+          font-size: 20px;
+          transition: 1s;
+        }
+
+        .sub-rooms a:hover{
+          color: deeppink;
+        }
+
+        .row img{
+          width: 550px;
+        }
+
+        .row b{
+          font-size: 20px;
+        }
+
+        .room-contents{
+          display: flex;
+          flex-wrap: wrap;
+          width: 500px;
+        }
+
+        .room-contents div{
+          width: 250px;
+        }
+
+        .room-contents div li{
+          font-size: 20px;
+          margin: 10px;
+        }
+
+        .gallery{
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
+        .gallery-content{
+          width: 280px;
+          margin: 15px;
+          text-align: center;
+        }
+
+        .gallery-content img{
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+        }
+
+        .gallery-content p{
+            font-size: 15px;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        
+        .contact-main{
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
+        .contact-content-one{
+          width: 500px;
+        }
+
+        .contact-content-one img{
+            width: 100%;
+        }
+
+        .contact-content-two{
+          margin: 10px;
+          text-align: center;
+        }
+
+        .contact-content-two p{
+          font-size: 30px;
+          margin-top: 50px;
+        }
+
+        .contact-content-two b{
+          font-size: 35px;
+        }
+
+        .contact-content-two a{
+          font-size: 40px;
+          text-decoration: none;
+        }
+        
+        footer{
+            width: 100%;
+            height: 60px;
+            background-color: black;
+            text-align: center;
+        }
+
+        footer li{
+            font-size: 30px;
+            display: inline-block;
+            color: white;
+            margin: 10px;
+        }
+
+        footer a{
+            text-decoration: none;
+            color: white;
+        }
+
+@media screen and (min-width: 320px) and (max-width: 620px) {
+
+      
+          header marquee{
+              font-size: 20px;
+          }
+    
+          nav{
+            background-color: transparent; 
+            display: none;
+          }
+
+          nav button{
+            display: none;
+          }
+    
+          .navbar-brand{
+              display: none;
+          }
+            
+          .dropdown-menu a{
+              font-size: 30px;
+              text-align: center;
+          }    
+    
+          .carousel-item  img{
+              height: 200px;
+          }
+    
+          h1{
+              font-size: 30px;
+          }    
+    
+          .about-one{
+            width: 320px;
+
+          }
+    
+          .about-two{
+             width: 320px;
+          }
+
+          .about-two p{
+          font-size: 18px;
+          }
+            
+          .about-two h2{
+              font-size: 22px;
+          }
+    
+          #room{
+              font-size: 35px;
+          }
+    
+          .sub-rooms{
+            font-size: 20px;
+          }
+
+
+          .row img{
+            width: 320px;
+          }
+
+          .row b{
+            font-size: 17px;
+          }
+
+        .room-contents{
+          width: 320px;
+        }
+
+        .room-contents div{
+          width: 160px;
+        }
+            
+        .room-contents ul{
+            margin-left: -25px;
+        }
+
+        .room-contents div li{
+          font-size: 15px;
+        }
+            
+
+          .gallery-content{
+            width: 150px;
+            margin: 5px;
+        
+          }
+
+          .gallery-content img{
+            width: 100%;
+            height: 180px;
+          }
+            
+          .gallery-content p{
+              font-size: 12px;
+          }
+    
+          .contact-content-one{
+              width: 350px;
+          }
+
+          .contact-content-one img{
+              width: 100%;
+          }   
+
+          .contact-content-two{
+            text-align: center;
+          }
+            
+          .contact-content-two p{
+              font-size: 18px;
+              margin-top: 0;
+          }
+           
+          .contact-content-two b{
+              font-size: 22px;
+          }
+            
+          .contact-content-two a{
+              font-size: 22px;
+          }
+          
+          footer li{
+            margin: 5px;
+          }
+
+          footer li a{
+            font-size: 10px;
+          }
+
+
+        }
+
+
+    </style>
+</head>
+<body>
+    <header>
+      <img src="AIL.png"><br>
+        <marquee behavior="alternate" direction="right"> <b> ADJOSEC INVESTMENT LIMITED </b> </marquee>
+    </header>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#"> <b> XXX - HOTEL </b>  </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon" style="font-size: 35px; border-radius: 20px; background-color: aqua; padding:5px;"> 
+              <div style="text-align: center; margin-top: 2px;">
+                  <b style="color: blue;"> = </b>
+              </div>             
+          </span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarText">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#"></a>
+            </li>
+            <li class="nav-item">
+              <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#"></a>
+            </li>
+            <li class="nav-item">
+              <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#"></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#room"> <b> ROOMS </b></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#gallery"> <b> GALLERY </b></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#about-us"> <b> ABOUT </b></a>
+            </li>
+            <li>
+            <li class="nav-item">
+              <a class="nav-link" href="#Contact-Heading"> <b> CONTACT </b></a>
+            </li>
+              <div>
+                <input type="search" placeholder="Search">
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  <div style="display: flex; flex-wrap: wrap; justify-content: center; text-align: center;">
+    <div class="dropdown"> 
+      <button class="btn btn-secondary dropdown-toggle" type="button" id="Branches" data-bs-toggle="dropdown" aria-expanded="false"> <b> DEPARTMENTS </b> </button>
+        <ul class="dropdown-menu" aria-labelledby="Branches">
+          <li> <a class="branch" href="Adjosec Hotel.html"> <b> ADJOSEC HOTEL </b> </a></li>
+          <li> <a class="branch" href="#room"> <b> TRIPLE "X" HOTEL </b> </a></li>
+          <li> <a class="branch" href="supermarket.html"> <b> SUPERMARKET </b> </a></li>
+          <li> <a class="branch" href="Triple X Bar.html"> <b> BAR/RESTAURANT </b> </a></li>
+          <li> <a class="branch" href="CashNCarry.html"> <b> WHOLESALE </b></a></li>
+        </ul>
+    </div>
+  </div>
+  <div id="carouselExampleFade" class="carousel slide carousel-fade" data-bs-ride="carousel">
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="Flyer 1.png" class="d-block w-100">
+        <div class="carousel-caption d-none d-md-block">
+            <marquee behavior="alternate" data-aos="zoom-in"> <b style="color: blue; font-size: 80px;"> Triple X Hotel </b> </h1> </marquee>
+            <marquee behavior="alternate" direction="right"> <b style="font-size: 45px; color: blueviolet;"> Buduburam's most exclusive Hotel</b> </marquee>
+        </div>
+      </div>
+
+      <div class="carousel-item">
+        <img src="Bar Banner.png" class="d-block w-100" alt="...">
+        <div class="carousel-caption d-none d-md-block"> </div>
+      </div>
+
+      <div class="carousel-item">
+        <img src="Flyer 3.png" class="d-block w-100" alt="...">
+        <div class="carousel-caption d-none d-md-block"> </div>
+      </div>
+      <div class="carousel-item">
+        <img src="Wholesale Banner.png" class="d-block w-100" alt="...">
+        <div class="carousel-caption d-none d-md-block"> </div>
+      </div>
+      <div class="carousel-item">
+        <img src="Supermarket Banner.png" class="d-block w-100" alt="...">
+        <div class="carousel-caption d-none d-md-block"> </div>
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+      </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden"> Next </span>
+    </button>
+  </div>
+
+<br>
+<h1 id="about-us"> <b> ABOUT US </b> </h1>
+  <div style="display: flex; flex-wrap: wrap; justify-content: center;">
+    <div class="about-one" data-aos="fade-right">
+      <h2 style="font-size: 20px;"> <b> ADJOSEC INVESTMENT LIMITED </b> </h2>
+      <i class="fa-solid fa-star" style="font-size: 25px;"></i> <i class="fa-solid fa-star" style="font-size: 25px;"></i> <i class="fa-solid fa-star" style="font-size: 25px;"></i>
+      <br>
+      <img src="8 PM Flyer.png" alt="">
+    </div>
+    <div class="about-two" data-aos="fade-left">
+      <br><br>
+      <h2> Commonly Known as <b style="color: purple;"> TRIPLE X </b> </h2>
+      <p> 
+        <b> <a href="index.html" style="text-decoration: none; color: green; font-size: 20px;"> <i title="Triple X"> ADJOSEC INVESTMENT LIMITED </i></a> </b> is Buduburam's first branded Hotel since 1994 and the only exclusive modernized hotel in Kasoa-Buduburam which offers over 50 well furnished rooms, 
+        ranging from Queen-sized rooms with all neccessaties to single unit rooms with simple appliances. At this Hotel, you have a backup plan for welcoming your visitors who arrive in an emergency or upon informing you. Just click the call button on this page to speak to our customer service agengy or
+        click the Whatsapp button to be directed to have a chat or video communication with us. Feel free in doing business with ADJOSEC. <br><br>
+        Founded by <a href="Director.html" style="text-decoration: none; color: brown;"> <i title="C.E.O"> Mr. Kwabena Owusu </i></a> and also the current C.E.O, it has been one of the (if not the ) best companies in the surrounding, offering job opportunities for over 50 employees, mainly the youths.  
+      </p>
+    </div>
+  </div>
+<br>
+<h1 id="room" data-aos="zoom-in"> <b> AVAILABLE ROOMS: </b> </h1>
+
+<div class="rooms" data-aos="zoom-out">
+    <div class="sub-rooms"> 
+      <a class="btn btn-primary" data-bs-toggle="collapse" href="#multiCollapseExample1" role="button" aria-expanded="false" aria-controls="multiCollapseExample1"> <b> QUEEN-SIZED ROOMS </b> </a>
+    </div>
+    <div class="sub-rooms"> 
+      <a class="btn btn-primary" data-bs-toggle="collapse" href="#multiCollapseExample2" role="button" aria-expanded="false" aria-controls="multiCollapseExample2"> <b> SUPERIOR ROOMS </b> </a>
+    </div>
+    <div class="sub-rooms"> 
+      <a class="btn btn-primary" data-bs-toggle="collapse" href="#multiCollapseExample3" role="button" aria-expanded="false" aria-controls="multiCollapseExample3"> <b> FAMILY ROOMS </b> </a>
+    </div>
+    <div class="sub-rooms"> 
+      <a class="btn btn-primary" data-bs-toggle="collapse" href="#multiCollapseExample4" role="button" aria-expanded="false" aria-controls="multiCollapseExample4"> <b> COUPLE ROOMS </b> </a>
+    </div>
+    <div class="sub-rooms"> 
+      <button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#multiCollapseExample5" aria-expanded="false" aria-controls="multiCollapseExample5"> <b> STANDARD ROOMS </b> </button>
+    </div>
+    <div class="sub-rooms"> 
+      <button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target=".multi-collapse" aria-expanded="false" aria-controls="multiCollapseExample1 multiCollapseExample2 multiCollapseExample3 multiCollapseExample4 multiCollapseExample5" style="margin: 5px;"> <b> ROOMS OVERVIEW </b> </button>
+    </div>
+</div>
+
+<div class="row">
+  <div class="col">
+    <div class="collapse multi-collapse" id="multiCollapseExample1">
+      <div class="card card-body">
+        <img src="XXX Room 2.jpg">
+        <b> Available in the Queen-Sized Rooms are: </b>
+        <div class="room-contents">
+          <div>
+              <ul>
+                <li> Queen-sized Bed </li>
+                <li> Room Service </li>
+                <li> 5" Television </li>
+                <li> Telephone </li>
+                <li> Mini-Bar </li>
+                <li> Bathtub(Shower) </li>
+                <li> Afterbath Cares </li>
+                <li> No - Smoking !!! </li>
+                <li> Ironing Service </li>
+                <li> Erand Service </li>
+              </ul>
+          </div>
+          <div>
+            <ul>
+                <li> Bathrobe </li>
+                <li> Laundry </li>
+                <li> Hairdryer </li>
+                <li> Wireless Internet </li>
+                <li> Breakfast </li>
+                <li> Air Conditioner </li>
+                <li> Hot Water </li>
+                <li> Mini-Fridge </li>
+                <li> Wifi (Internet)</li>
+                <li> Meal </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+   <div class="col">
+    <div class="collapse multi-collapse" id="multiCollapseExample2">
+      <div class="card card-body">
+        <img src="XXX Room 1.jpg">
+        <b> Available in the Superior Rooms are: </b>
+        <div class="room-contents">
+
+          <div>
+              <ul>
+                <li> Master Bed </li>
+                <li> Room Service </li>
+                <li> Hairdryer </li>
+                <li> Telephone </li>
+                <li> Mini-Bar </li>
+                <li> Bathtub </li>
+                <li> Television </li>
+                <li> No - Smoking !!! </li>
+                <li> Ironing Service </li>
+           </div>
+           <div> 
+                <li> Shower (Bathtub) </li>
+                <li> Air Conditioner </li>
+                <li> Laundry Service </li>
+                <li> Double Bed </li>
+                <li> (1G/24hr) Internet </li>
+                <li> Hot Water </li>
+                <li> DSTV Provided </li>
+                <li> Breakfast (Tea) </li>
+              </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+   <div class="col">
+    <div class="collapse multi-collapse" id="multiCollapseExample3">
+     <div class="card card-body">
+        <img src="XXX Room 1.jpg">
+        <b> Available in the Family Rooms are: </b>
+        <div class="room-contents">
+          <div>
+              <ul>
+                <li> Master Bed </li>
+                <li> Children-Bed  </li>
+                <li> Room Service </li>
+                <li> Telephone </li>
+                <li> Two Hanging Fans </li>
+
+                <li> Two Bathrooms </li>
+                <li> Television </li>
+                <li> No - Smoking!! </li>
+                <li> Laundry (with T&C) </li>
+                <li> (1G/24hr) Internet </li>
+              </ul>
+          </div>
+          <div>
+              <ul>
+                <li> Bathrobe </li>
+                <li> Laundry Service </li>
+                <li> Double Bed </li> 
+                <li> Personal Laundry </li>
+                <li> Double Bed </li>
+                <li> Air Conditioner</li>
+                <li> Hot Water </li>
+                <li> Wireless Internet </li>
+                <li> Breakfast (Tea) </li>
+              </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+   <div class="col">
+    <div class="collapse multi-collapse" id="multiCollapseExample4">
+      <div class="card card-body">
+        <img src="XXX Room 1.jpg">
+        <b> Available in the Couples Rooms are: </b>
+        <div class="room-contents">
+ 
+          <div>
+              <ul>
+                <li> Queen-sized Bed </li>
+                <li> Room Service </li>
+                <li> Hairdryer </li>
+                <li> Telephone </li>
+                <li> Mini-Bar </li>
+                <li> Bathtub </li>
+                <li> Television </li>
+                <li> No - Smoking !!! </li>
+                <li> Ironing Service </li>
+                <li> Shower(Bathtub) </li>
+              </ul>
+          </div>
+          <div>
+              <ul>
+                <li> Bathrobe </li>
+                <li> Laundry Service </li>
+                <li> Single Bed </li>
+                <li> Wireless Internet </li>
+                <li> Laundry </li>
+                <li> Air Conditioned </li>
+                <li> DSTV Provided </li>
+                <li> Double Bed </li>
+                <li> Wifi </li>
+                <li> Breakfast (Tea) </li>
+              </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+   <div class="col">
+    <div class="collapse multi-collapse" id="multiCollapseExample5">
+      <div class="card card-body">
+        <img src="XXX Room 1.jpg">
+        <b> Available in the Single Rooms are: </b>
+        <div class="room-contents">
+          <div>
+              <ul>
+                <li> Single Bed </li>
+                <li> Television </li>
+                <li> Telephone </li>
+                <li> No Room Service </li>
+                <li> No Hairdryer </li>
+
+                <li> No Mini-Bar </li>
+                <li> No Bathtub </li>
+
+                <li> No - Smoking !!! </li>
+                <li> No Iron/Ironing</li>
+                <li> No Afterbath Care </li>
+              </ul>
+          </div>
+          <div>
+              <ul>
+                <li> Hanging Fan </li>
+                <li> No Bathrobe </li>
+                <li> No Laundry Service </li>
+                <li> No Double Bed </li>
+                <li> No Internet </li>
+                <li> No Hot Water </li>
+                <li> No Air Conditioned </li>
+                <li> No Errand Service </li>
+                <li> No Wifi </li>
+                <li> No Breakfast </li>
+              </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<h1 id="gallery" data-aos="zoom-in"> <b> GALLERY </b> </h1>
+    <div class="gallery" data-aos="zoom-in">
+        <div class="gallery-content" data-aos="zoom-in">
+            <img src="XXX Hall 1.jpg" alt="">
+            <p> ADJOSEC HOTEL ANNEX </p>
+        </div>
+        <div class="gallery-content" data-aos="zoom-in">
+            <img src="XXX Hall 1.jpg" alt="">
+            <p> ADJOSEC HOTEL ANNEX </p>
+        </div>
+        <div class="gallery-content" data-aos="zoom-in">
+            <img src="Gym 1.jpg" alt="">
+            <p> ADJOSEC HOTEL ANNEX </p>
+        </div>
+        <div class="gallery-content" data-aos="zoom-in">
+            <img src="Gym 1.jpg" alt="">
+            <p> ADJOSEC HOTEL ANNEX </p>
+        </div>
+        <div class="gallery-content" data-aos="zoom-in">
+            <img src="Gym 1.jpg" alt="">
+            <p> ADJOSEC HOTEL ANNEX </p>
+        </div>
+        <div class="gallery-content" data-aos="zoom-in">
+            <img src="XXX Hall 1.jpg" alt="">
+            <p> ADJOSEC HOTEL ANNEX </p>
+        </div>
+        <div class="gallery-content" data-aos="zoom-in">
+            <img src="XXX Hall 1.jpg" alt="">
+            <p> ADJOSEC HOTEL ANNEX  </p>
+        </div>
+        <div class="gallery-content" data-aos="zoom-in">
+            <img src="XXX Reception.jpg" alt="">
+            <p> ADJOSEC HOTEL ANNEX </p>
+        </div>
+        <div class="gallery-content" data-aos="zoom-in">
+            <img src="XXX Administration.jpg" alt="">
+            <p> ADJOSEC HOTEL ANNEX </p>
+        </div>
+        <div class="gallery-content" data-aos="zoom-in">
+            <img src="XXX Administration.jpg" alt="">
+            <p> ADJOSEC HOTEL ANNEX </p>
+        </div>
+        <div class="gallery-content" data-aos="zoom-in">
+            <img src="XXX Pool.jpg" alt="">
+            <p> ADJOSEC HOTEL ANNEX </p>
+        </div>
+        <div class="gallery-content" data-aos="zoom-in">
+            <img src="XXX Reception.jpg" alt="">
+            <p> ADJOSEC HOTEL ANNEX </p>
+        </div>
+        <div class="gallery-content" data-aos="zoom-in">
+            <img src="XXX Hall 1.jpg" alt="">
+            <p> ADJOSEC HOTEL ANNEX </p>
+        </div>
+        <div class="gallery-content" data-aos="zoom-in">
+            <img src="XXX Hall 1.jpg" alt="">
+            <p> ADJOSEC HOTEL ANNEX </p>
+        </div>
+        <div class="gallery-content" data-aos="zoom-in">
+            <img src="XXX Pool.jpg" alt="">
+            <p> ADJOSEC HOTEL ANNEX </p>
+        </div>
+        <div class="gallery-content" data-aos="zoom-in">
+            <img src="XXX Administration.jpg" alt="">
+            <p> ADJOSEC HOTEL ANNEX </p>
+        </div>
+        <div class="gallery-content" data-aos="zoom-in">
+            <img src="XXX Van 1.jpg" alt="">
+            <p> ADJOSEC HOTEL ANNEX </p>
+        </div>
+        <div class="gallery-content" data-aos="zoom-in">
+            <img src="XXX Reception.jpg" alt="">
+            <p> ADJOSEC HOTEL ANNEX </p>
+        </div>
+        <div class="gallery-content" data-aos="zoom-in">
+            <img src="XXX Hall 1.jpg" alt="">
+            <p> ADJOSEC HOTEL ANNEX </p>
+        </div>
+        <div class="gallery-content" data-aos="zoom-in">
+            <img src="XXX Room 2.jpg" alt="">
+            <p> ADJOSEC HOTEL ANNEX </p>
+        </div>
+        <div class="gallery-content" data-aos="zoom-in">
+            <img src="XXX Room 1.jpg" alt="">
+            <p> ADJOSEC HOTEL ANNEX </p>
+        </div>
+        <div class="gallery-content" data-aos="zoom-in">
+            <img src="XXX Hall 1.jpg" alt="">
+            <p> ADJOSEC HOTEL ANNEX </p>
+        </div>
+        <div class="gallery-content" data-aos="zoom-in">
+            <img src="XXX Room 1.jpg" alt="">
+            <p> ADJOSEC HOTEL ANNEX </p>
+        </div>
+        <div class="gallery-content" data-aos="zoom-in">
+            <img src="Pool 3.jpg" alt="">
+            <p> ADJOSEC HOTEL ANNEX </p>
+        </div>
+    </div>
+
+    <br><br>
+    
+    <h1 id="Contact-Heading" data-aos="zoom-in"> <b> Contact Us </b> </h1>
+
+    <br><br>
+
+    <div class="contact-main">
+        <div class="contact-content-one" data-aos="fade-right">
+            <img src="Four Special Flyer.png">
+        </div>
+        <div class="contact-content-two" data-aos="fade-left">
+            <p style="font-family: Arial, Helvetica, sans-serif;">
+                Do you want To Get In Contact With Us? <br>               
+                We are an inch away from you. <br><br>
+                <b> Contact Us Direct/Whatsapp at:</b> <br> 
+                <a href="https://wa.me/233264262543" style="text-decoration: none;"> 
+                    (+233) 264 - 262 - 543 
+                    <br> 
+                    (+233) 533 - 480 - 202      
+                </a> <br><br>
+                <b> Email Us at: </b> <br> 
+                <a href="#"> 
+                  sheriffmoifelay7@gmail.com <br>
+                  moifelay7@yaloo.com <br>
+                  khalifah7@gmail.com <br>
+
+                </a>
+            </p>
+        </div>
+    </div>
+<br>
+<footer>
+  <ul>
+    <li> <a href="#about-us"> About </a> </li>
+    <li> <a href="Director.html"> Management </a> </li>
+    <li> <a href="Contact.html"> Contact </a> </li>
+    <li> <a href="#"> &2025 Adjosec Investment Ltd. </a> </li>
+  </ul>  
+</footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script> 
+    <script>
+        AOS.init();
+    </script>
+        
+        
+    <!-- Elfsight WhatsApp Chat | Untitled WhatsApp Chat -->
+    <script src="https://elfsightcdn.com/platform.js" async></script>
+    <div class="elfsight-app-d6b7979c-2042-4bb0-b71e-c196c8e2831a" data-elfsight-app-lazy></div>
+        
+    <script src="https://cdn.commoninja.com/sdk/latest/commonninja.js" defer></script>
+    <div class="commonninja_component pid-24a07d48-273a-4461-a178-a8af50d2ccbe"></div>
+        
+</body>
+</html>

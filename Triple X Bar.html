@@ -1,0 +1,567 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> XXX - BAR </title>
+    <link rel="shortcut icon" href="AIL.png" type="image/x-icon">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+
+        header{
+            width: 100%;
+            height: 210px;
+            text-align: center;
+        }
+    
+        header img{
+            width: 200px;
+        }
+    
+
+       header marquee b{
+           font-size: 65px; 
+           font-family: Arial, Helvetica, sans-serif; 
+           color: aqua; 
+       }
+    
+        nav{
+            width: 100%;
+            height: 65px;
+            background-color: rgb(57, 4, 107);
+            text-align: center;
+        }
+
+        nav li{
+            display: inline-block;
+            margin: 10px;
+        }
+
+        nav a{
+            text-decoration: none;
+            font-family: Arial, Helvetica, sans-serif;
+            color: deeppink;
+            font-size: 45px;
+            transition: 1s;
+        }
+
+        nav a:hover{
+            color: orangered;
+        }
+
+        h1{
+            text-align: center;
+            color: green;
+            font-size: 55px;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        .about-main{
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+    
+        .about-content-one{
+            width: 500px;
+        }
+
+        .about-content-one img{
+            margin-top: 80px;
+            width: 100%;
+        }
+
+        .about-content-two{
+            width: 550px;
+            margin: 10px;
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+        .about-content-two h2{
+            text-align: center;
+            font-family: Arial, Helvetica, sans-serif; 
+            color: deeppink;
+        }
+
+        .about-content-two p{
+            font-size: 25px;
+            font-family: Arial, Helvetica, sans-serif;
+            text-align: left;
+        }
+
+        .about-content-two div{
+            width: 250px;
+            margin-left: 10px;
+        }
+
+        .about-content-two b{
+            font-size: 25px;
+        }
+
+        .about-content-two li{
+            display: block;
+            font-size: 25px;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        #product{
+            text-align: center;
+            font-size: 55px;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        .product{
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
+        .product-content{
+            width: 300px;
+            height: 350px;
+            margin: 10px;
+        }
+
+        .product-content img{
+            width: 100%;
+            height: 340px;
+            object-fit: cover;
+        }
+
+        .product-content p{
+            font-size: 20px;
+            font-family: Arial, Helvetica, sans-serif;
+            text-align: center;
+        }
+        
+        #gallery{
+            text-align: center;
+        }
+
+        .gallery{
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
+        .gallery-content{
+            width: 400px;
+            height: 250px;
+            margin: 10px;
+            text-align: center;
+        }
+
+        .gallery-content img{
+            width: 100%;
+            height: 240px;
+            object-fit: cover;
+        }
+
+        .gallery-content p{
+            font-size: 20px;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        #Contact-Heading{
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            text-align: center;
+        }  
+        
+        .contact-main{
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
+        .contact-content-one{
+            width: 500px;
+        }
+
+        .contact-content-one img{
+            width: 100%;
+        }
+
+        .contact-content-two{
+            width: 600px;
+            margin: 20px;
+            text-align: center;
+        }
+
+        .contact-content-two p{
+            font-size: 25px;
+        }
+
+        .contact-content-two b{
+            font-size: 25px;
+        }
+
+
+        .contact-content-two a{
+            text-decoration: none;
+        }
+
+        footer{
+            width: 100%;
+            height: 60px;
+            background-color: black;
+            text-align: center;
+        }
+
+        footer li{
+            font-size: 30px;
+            display: inline-block;
+            margin: 10px;
+        }
+
+        footer a{
+            text-decoration: none;
+            color: white;
+        }
+    
+    @media screen and (min-width:320px) and (max-width:700px) {
+            header{
+                height: 180px;
+            }
+            
+            header marquee b{
+
+             font-size: 35px; 
+            }
+            
+            nav{
+                height: 35px;
+            }
+
+            nav li a{
+                font-size: 10px;
+            }
+            
+            .about-content-one{
+                width: 350px;
+            }
+            
+            .about-content-two p{
+                margin-left: 10px;
+                font-size: 20px;
+            }
+
+            .about-content-two p{
+                font-size: 20px;
+            }
+
+            .about-content-two div{
+                width: 200px;
+            }
+
+            .about-content-two b{
+                font-size: 20px;
+            }
+
+        .about-content-two li{
+            font-size: 20px;
+        }
+            
+            #product{
+                font-size: 35px;
+            }
+
+            .product-content{
+                width: 350px;
+
+                text-align: center;
+                margin: 20px;
+            }
+
+            .product-content img{
+                width: 100%;
+            }
+
+            .product-content p{
+                font-size: 25px;
+            }
+
+            .gallery-content{
+                width: 220px;
+                height: 260px;
+                margin: 7px;
+            }
+
+            .gallery-content img{
+                width: 100%;
+                height: 245px;
+            }
+
+            .gallery-content p{
+                text-align: center;
+                font-size: 15px;
+            }
+
+            .contact-content-one{
+                width: 350px;
+            }
+        
+            .contact-content-one img{
+                width: 100%;
+            }
+        
+            .contact-content-two{
+                width: 350px;
+                margin: 5px;
+                text-align: center;
+            }
+            
+            .contact-content-two p{
+                font-size: 20px;
+            }
+        
+            .contact-content-two b{
+                font-size: 23px;
+            }
+        
+            .contact-content-two a{
+                font-size: 25px;
+            }
+        
+            footer{
+                height: 30px;
+            }
+
+            footer li a{
+            font-size: 10px;
+            } 
+
+            footer li{
+            font-size: 6px;
+            }
+
+        }
+
+    </style>
+
+</head>
+<body>
+    <header>
+       <a href=""> 
+          <img src="AIL.png"> 
+          <marquee behavior="alternate" direction="right"> <b> TRIPLE X - BAR </b> </marquee>
+       </a>
+    </header>
+    <br>
+    <nav data-aos="zoom-in">
+        <ul>
+            <li> <a href="index.html"> Home </a></li>
+            <li> <a href="#product"> Our Ditches </a></li>
+            <li> <a href="#gallery"> Gallery </a></li>
+            <li> <a href="#About-Heading"> About Us </a></li>
+            <li> <a href="#Contact-Heading"> Contact Us </a></li>
+        </ul>
+    </nav>
+    <img src="Bar Banner.png" alt="" style="width: 100%;">
+    <br><br>
+    <h1 id="About-Heading"> ABOUT US </h1>
+    <div class="about-main" data-aos="fade-right">
+        <div class="about-content-one">
+            <img src="Director 1.jpg" alt="">
+        </div>
+        <div class="about-content-two" data-aos="fade-left">
+            <h2> <b> AT TRIPLE X - BAR / RESTAURANT </b> </h2>
+            <p> 
+                We are the <b> Restaurant / Bar </b> branch of <a href="index.html" style="text-decoration: none;" title="Triple X Hotel"> ADJOSEC INVESTMENT LIMITED </a> 
+                whose priority is making available both continental and local satisfactions to our customers. <br><br>
+                We are the best deal with both local and continental dishes. We believe our customers to be of varieties of background so we have a solid team consisting 
+                of many backgrounds whose experiences cover almost every brand of cathering and pastery. We provide the following:
+                <div style="display: flex; flex-wrap: wrap; justify-content: center; width: 500px;">
+                    <div style="width: 500px;">
+                        <b> <u> Local Dishes: </u></b> 
+                        <ul>
+                           <li> Banku & Tilapia </li>
+                           <li> Banku & Okro Soup </li>
+                           <li> Banku & Groundnut Soup </li>
+                           <li> Fufu & Fish </li>
+                           <li> Fufu & Meat </li>
+                           <li> Emutuo </li>
+                           <li> Toozarfee </li>
+                           <li> Wakye </li>
+                        <li> Gorbeh & Garri </li>
+                     </ul>
+                </div>
+                <div style="width: 200px;">
+                    <b> <u> Continental Dishes: </u></b> 
+                    <ul>
+                        <li> Fried Rice </li>
+                        <li> Jollof Rice </li>
+                        <li> Grilled Tilapia </li>
+                        <li> Grilled Sausage </li>
+                        <li> Barbecue </li>
+                        <li> Continental Pizza </li>
+                        <li> Cake </li>
+                        <li> Meat-pie </li>
+                        <li> Spaghetti/Indomie </li>
+                    </ul>
+                </div>
+              </div> 
+            </p>
+        </div>
+    </div>
+    <br><br>
+    <h1 id="product"> OUR DITCHES </h1>
+    <div class="product" data-aos="zoom-out">
+        <div class="product-content">
+            <img src="Fried Rice With Chicken.jpeg" alt="">
+            <p> Fried Rice & Chicken </p>
+        </div>
+        <div class="product-content">
+            <img src="Grilled Tilapia.jpg" alt="">
+            <p> Grilled Tilapia  </p>
+        </div>
+        <div class="product-content">
+            <img src="Fufu With Chicken.jpeg" alt="">
+            <p> Fufu & Chicken </p>
+        </div>
+        <div class="product-content">
+            <img src="Banku & Groundnut.jpeg" alt="">
+            <p> Banku & Groundnut Soup </p>
+        </div>
+        <div class="product-content">
+            <img src="Fried Rice.jpeg" alt="">
+            <p> Fried Rice  </p>
+        </div>
+        <div class="product-content">
+            <img src="Fufu With Tilapia.jpeg" alt="">
+            <p> Fufu & Tilapia </p>
+        </div>
+        <div class="product-content">
+            <img src="Banku With Tilapia.jpeg" alt="">
+            <p> Banku & Tilapia </p>
+        </div>
+        <div class="product-content">
+            <img src="Grilled Sausage.jpeg" alt="">
+            <p> Grilled Sausage </p>
+        </div>
+        <div class="product-content">
+            <img src="Barbecue.jpg" alt="">
+            <p> Roasted Barbecue </p>
+        </div>
+        <div class="product-content">
+            <img src="Emutuo.jpeg" alt="">
+            <p> Emutuo (Rice Ball) </p>
+        </div>
+        <div class="product-content">
+            <img src="Gobeh.jpeg" alt="">
+            <p> Gobeh (Beans) </p>
+        </div>
+        <div class="product-content">
+            <img src="Waakye.jpeg" alt="">
+            <p> Waakye (Beans) </p>
+        </div>
+    </div>
+
+<br><br>
+<h1 id="gallery"> GALLERY </h1>
+    <div class="gallery" data-aos="zoom-in">
+        <div class="gallery-content">
+            <img src="Bar 1.jpg" alt="">
+            <p> @ XXX-Bar/Restaurant </p>
+        </div>
+        <div class="gallery-content">
+            <img src="Bar 2.jpeg" alt="">
+            <p> @ XXX-Bar/Restaurant </p>
+        </div>
+        <div class="gallery-content">
+            <img src="Bar 3.jpeg" alt="">
+            <p> @ XXX-Bar/Restaurant </p>
+        </div>
+        <div class="gallery-content">
+            <img src="Bar 4.jpeg" alt="">
+            <p> @ XXX-Bar/Restaurant </p>
+        </div>
+        <div class="gallery-content">
+            <img src="Bar 5.jpeg" alt="">
+            <p> @ XXX-Bar/Restaurant </p>
+        </div>
+        <div class="gallery-content">
+            <img src="Bar 6.jpeg" alt="">
+            <p> @ XXX-Bar/Restaurant </p>
+        </div>
+        <div class="gallery-content">
+            <img src="Bar 7.jpg" alt="">
+            <p> @ XXX-Bar/Restaurant </p>
+        </div>
+        <div class="gallery-content">
+            <img src="Bar 8.jpg" alt="">
+            <p> @ XXX-Bar/Restaurant </p>
+        </div>
+        <div class="gallery-content">
+            <img src="Bar 9.jpeg" alt="">
+            <p> @ XXX-Bar/Restaurant </p>
+        </div>
+        <div class="gallery-content">
+            <img src="Bar 10.jpg" alt="">
+            <p> @ XXX-Bar/Restaurant </p>
+        </div>
+        <div class="gallery-content">
+            <img src="Bar 11.jpg" alt="">
+            <p> @ XXX-Bar/Restaurant </p>
+        </div>
+        <div class="gallery-content">
+            <img src="banku and tilapia.jpg" alt="">
+            <p> @ XXX-Bar/Restaurant </p>
+        </div>
+        <div class="gallery-content">
+            <img src="Grilled Sausage.jpeg" alt="">
+            <p> @ XXX-Bar/Restaurant </p>
+        </div>
+        <div class="gallery-content">
+            <img src="Fufu With Chicken.jpeg" alt="">
+            <p> @ XXX-Bar/Restaurant </p>
+        </div>
+        <div class="gallery-content">
+            <img src="Gobeh.jpeg" alt="">
+            <p> @ XXX-Bar/Restaurant </p>
+        </div>
+    </div>
+    <br><br>
+    <h1 id="Contact-Heading"> CONTACT </h1>
+    <br>
+    <div class="contact-main">
+        <div class="contact-content-one" data-aos="fade-right">
+            <img src="Banku With Tilapia.jpeg">
+        </div>
+        <div class="contact-content-two" data-aos="fade-left">
+            <p style="font-family: Arial, Helvetica, sans-serif;">
+                Do you want to get in contact with us? <br>
+                We are an inch away from you. <br><br>
+                <b> Contact Us Direct/Whatsapp: </b> <br> 
+                <a href="#">
+                  (+233) 202 168 170 <br>
+                  (+233) 533 480 202   
+                </a>
+                <br><br>
+                <b> Email Us at: </b> <br> 
+                <a href="#"> adjosecwholesale@gmail.com </a>
+            </p>
+
+        </div>
+    </div>
+<br><br>
+
+<footer>
+  <ul>
+    <li> <a href="#About-Heading"> About </a> </li>
+    <li> <a href="Director.html"> Management </a> </li>
+    <li> <a href="Contact.html"> Contact </a> </li>
+    <li> <a href="#"> &2025 Adjosec Investment Ltd. </a> </li>
+  </ul>  
+</footer>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>  
+  <script>
+  AOS.init();
+</script>
+</body>
+</html>

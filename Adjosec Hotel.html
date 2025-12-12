@@ -1,0 +1,666 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> ADJOSEC HOTEL </title>
+    <link rel="shortcut icon" href="AIL.png" type="image/x-icon">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+
+        header{
+            text-align: center;
+            width: 100%;
+            height: 170px;
+        }
+
+        header img{
+            width: 150px;
+        
+        }
+
+        header marquee{
+            font-size: 50px; 
+            font-family: Arial, Helvetica, sans-serif; 
+            color: aqua;
+        }
+
+        nav{
+            width: 100%;
+            height: 70px;
+            background-color: rgb(57, 4, 107);
+            text-align: center;
+        }
+
+        nav li{
+            display: inline-block;
+            margin: 10px;
+        }
+
+        nav a{
+            text-decoration: none;
+            font-family: Arial, Helvetica, sans-serif;
+            color: white;
+            font-size: 45px;
+            transition: 1s;
+        }
+
+        nav a:hover{
+            color: orangered;
+        }
+
+        h1{
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            text-align: center;
+            font-size: 55px;
+            color: brown;
+        }
+
+        .about-main{
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
+        .about-content-one{
+            width: 40%; 
+            margin: 10px;
+            text-align: center;
+        }
+
+        .about-content-one img{
+            width: 100%;  
+        }
+
+        .about-content-two{
+            width: 50%;    
+        }
+
+        .about-content-two p{
+            font-size: 25px;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        .about-content-two ul li{
+            font-size: 25px;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        .gym{
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
+        .gym-content{
+            width: 240px;
+            margin: 10px;
+            text-align: center;
+        }
+
+        .gym-content img{
+            width: 100%;
+        }
+
+        .gym-content p{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        
+        .contact-main{
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
+        .contact-content-one{
+            width: 500px;
+            margin: 10px;
+        }
+
+        .contact-content-one img{
+            width: 100%;            
+        }
+
+        .contact-content-two{
+            text-align: center;
+        }
+
+        .contact-content-two b{
+            font-size: 35px;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        .contact-content-two i{
+            font-size: 40px;
+            color: rgb(213, 65, 233);
+        }
+
+        footer{
+            width: 100%;
+            height: 50px;
+            background-color: black;
+            text-align: center;
+        }
+
+        footer li{
+            display: inline-block;
+            margin: 5px;
+        }
+
+        footer a{
+            text-decoration: none;
+            color: white;
+            font-size: 30px;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            transition: 1s;
+        }
+
+        footer a:hover{
+            color: green;
+        }
+
+        
+        @media screen and (min-width:320px) and (max-width:700px) {
+            header{
+                height: 145px;
+            }
+            
+            header marquee{
+                font-size: 20px;   
+            }
+            
+            nav li a{
+                font-size: 12px;
+            }
+            
+            nav{
+                height: 40px;
+            }
+            
+            h1{
+                font-size: 30px;
+            }
+            
+            .about-content-one{
+                width: 350px; 
+            }
+
+            .about-content-two b{
+                font-size: 18px;
+            }
+            
+            .about-content-two p{
+                font-size: 18px;
+            }
+            
+            .about-content-two ul li{
+                font-size: 18px;
+            }
+            
+            .about-content-two{
+                margin-left: 10px;
+                width: 340px;
+            }
+
+            .gym-content{
+                width: 350px;
+            }
+
+            .gym-content img{
+                width: 100%;
+            }
+
+            .gym-content p{
+                font-size: 20px;
+            }
+
+            .contact-content-one{
+                width: 350px;
+            }
+            
+            .contact-content-two{
+                width: 350px;
+            }
+
+            .contact-content-one img{
+                width: 100%;
+            }
+            
+            .contact-content-two b{
+                font-size: 18px;
+            }
+            
+            .contact-content-two i{
+                font-size: 20px;
+            }
+            
+            #email{
+                font-size: 18px;
+            }
+
+            footer{
+                height: 30px;
+            }
+
+            footer li{
+                font-size: 15px;
+            }
+
+            footer li a{
+            font-size: 15px;
+            } 
+        } 
+
+    </style>
+
+</head>
+<body>
+    <header>
+        <a href=""> <img src="AIL.png"> </a> <br>
+        <marquee behavior="alternate" direction="right"> <b> ADJOSEC HOTEL, BAR, GYM & POOL </b> </marquee>
+    </header>
+    <br>
+    <nav data-aos="zoom-in">
+        <ul>
+            <li> <a href="index.html"> <b> Home </b> </a></li>
+            <li> <a href="#pool"> <b> Pool </b> </a></li>
+            <li> <a href="#gym"> <b> Gym </b> </a></li>
+            <li> <a href="#hotel"> <b> Hotel </b> </a></li>
+            <li> <a href="#about"> <b> About </b> </a></li>
+            <li> <a href="#contact"> <b> Contact </b> </a></li>
+        </ul>
+    </nav>
+    <img src="Flyer 2.png" style="width: 100%;">
+    <br><br>
+    <h1 id="about"> ABOUT US </h1>
+    <div class="about-main" data-aos="fade-right">
+        <div class="about-content-one">
+            <img src="Gym 2.jpg" alt=""> <br>
+            <b style="font-family: Arial, Helvetica, sans-serif; font-size: 30px;"> ADJOSEC HOTEL GYM </b>
+        </div>
+        <div class="about-content-two" data-aos="fade-left">
+            <p style="font-family: Arial, Helvetica, sans-serif;"> <br>
+                We are a branch of <b> <i> <a href="index.html" style="text-decoration: none;"> ADJOSEC INVESTMENT LIMITED </i> </a> </b>, which consists of a <b> Hotel, Gym, Pool, Bar </b> and <b> Farm (animals-rearing) </b> departments providing exclusive and excellence satisfactions to our customers. <br><br>
+                We accomodate you in a 100% safely private, quiet and amazing environment suitable for personal relaxation, zoo touring, private timing with love ones, special occasions (Event Center), pool partying, and gyming, which including but not limited to: <br>
+                <ul style="margin-left: 20px; font-size: 18px;">
+                    <li> Hotel Lodging </li>
+                    <li> Special Day Memorial Making </li>
+                    <li> Marriage, Graduation, or Birthday Ceremonies </li>
+                    <li> Pool Partying </li>
+                    <li> Acrobatic Exercising (Gym) </li>
+                    <li> Zoo (animals) View </li>
+                </ul>
+            </p>
+        </div>
+    </div>
+    <br><br>
+    <h1 id="pool"> POOL GALLERY </h1>
+    <div class="gym" data-aos="zoom-out">
+        <div class="gym-content">
+            <img src="Pool 3.jpg" alt="">
+            <p> ADJOSEC POOL </p>
+        </div>
+        <div class="gym-content">
+            <img src="Pool 3.jpg" alt="">
+            <p> ADJOSEC POOL </p>
+        </div>
+        <div class="gym-content">
+            <img src="Pool 3.jpg" alt="">
+            <p> ADJOSEC POOL </p>
+        </div>
+        <div class="gym-content">
+            <img src="Pool 3.jpg" alt="">
+            <p> ADJOSEC POOL </p>
+        </div>
+        <div class="gym-content">
+            <img src="Pool 3.jpg" alt="">
+            <p> ADJOSEC POOL </p>
+        </div>
+        <div class="gym-content">
+            <img src="Pool 3.jpg" alt="">
+            <p> ADJOSEC POOL </p>
+        </div>
+        <div class="gym-content">
+            <img src="Pool 3.jpg" alt="">
+            <p> ADJOSEC POOL </p>
+        </div>
+        <div class="gym-content">
+            <img src="Pool 3.jpg" alt="">
+            <p> ADJOSEC POOL </p>
+        </div>
+        <div class="gym-content">
+            <img src="Pool 3.jpg" alt="">
+            <p> ADJOSEC POOL </p>
+        </div>
+        <div class="gym-content">
+            <img src="Pool 3.jpg" alt="">
+            <p> ADJOSEC POOL </p>
+        </div>
+        <div class="gym-content">
+            <img src="Pool 3.jpg" alt="">
+            <p> ADJOSEC POOL </p>
+        </div>
+        <div class="gym-content">
+            <img src="Pool 3.jpg" alt="">
+            <p> ADJOSEC POOL </p>
+        </div>
+        <div class="gym-content">
+            <img src="Pool 3.jpg" alt="">
+            <p> ADJOSEC POOL </p>
+        </div>
+        <div class="gym-content">
+            <img src="Pool 3.jpg" alt="">
+            <p> ADJOSEC POOL </p>
+        </div>
+        <div class="gym-content">
+            <img src="Pool 3.jpg" alt="">
+            <p> ADJOSEC POOL </p>
+        </div>
+        <div class="gym-content">
+            <img src="Pool 3.jpg" alt="">
+            <p> ADJOSEC POOL </p>
+        </div>
+        <div class="gym-content">
+            <img src="Pool 3.jpg" alt="">
+            <p> ADJOSEC POOL </p>
+        </div>
+        <div class="gym-content">
+            <img src="Pool 3.jpg" alt="">
+            <p> ADJOSEC POOL </p>
+        </div>
+        <div class="gym-content">
+            <img src="Pool 3.jpg" alt="">
+            <p> ADJOSEC POOL </p>
+        </div>
+        <div class="gym-content">
+            <img src="Pool 3.jpg" alt="">
+            <p> ADJOSEC POOL </p>
+        </div>
+    </div>
+    <br><br>
+    <h1 id="gym"> GYM GALLERY </h1>
+    <div class="gym" data-aos="zoom-out">
+        <div class="gym-content">
+            <img src="Gym 1.jpg" alt="">
+            <p> ADJOSEC GYM </p>
+        </div>
+        <div class="gym-content">
+            <img src="Gym 3.jpg" alt="">
+            <p> ADJOSEC GYM </p>
+        </div>
+        <div class="gym-content">
+            <img src="Gym 1.jpg" alt="">
+            <p> ADJOSEC GYM </p>
+        </div>
+        <div class="gym-content">
+            <img src="Gym 3.jpg" alt="">
+            <p> ADJOSEC GYM </p>
+        </div>
+        <div class="gym-content">
+            <img src="Gym 1.jpg" alt="">
+            <p> ADJOSEC GYM </p>
+        </div>
+        <div class="gym-content">
+            <img src="Gym 3.jpg" alt="">
+            <p> ADJOSEC GYM </p>
+        </div>
+        <div class="gym-content">
+            <img src="Gym 1.jpg" alt="">
+            <p> ADJOSEC GYM </p>
+        </div>
+        <div class="gym-content">
+            <img src="Gym 3.jpg" alt="">
+            <p> ADJOSEC GYM </p>
+        </div>
+        <div class="gym-content">
+            <img src="Gym 1.jpg" alt="">
+            <p> ADJOSEC GYM </p>
+        </div>
+        <div class="gym-content">
+            <img src="Gym 3.jpg" alt="">
+            <p> ADJOSEC GYM </p>
+        </div>
+        <div class="gym-content">
+            <img src="Gym 1.jpg" alt="">
+            <p> ADJOSEC GYM </p>
+        </div>
+        <div class="gym-content">
+            <img src="Gym 3.jpg" alt="">
+            <p> ADJOSEC GYM </p>
+        </div>
+        <div class="gym-content">
+            <img src="Gym 1.jpg" alt="">
+            <p> ADJOSEC GYM </p>
+        </div>
+        <div class="gym-content">
+            <img src="Gym 3.jpg" alt="">
+            <p> ADJOSEC GYM </p>
+        </div>
+        <div class="gym-content">
+            <img src="Gym 1.jpg" alt="">
+            <p> ADJOSEC GYM </p>
+        </div>
+        <div class="gym-content">
+            <img src="Gym 3.jpg" alt="">
+            <p> ADJOSEC GYM </p>
+        </div>
+        <div class="gym-content">
+            <img src="Gym 1.jpg" alt="">
+            <p> ADJOSEC GYM </p>
+        </div>
+        <div class="gym-content">
+            <img src="Gym 3.jpg" alt="">
+            <p> ADJOSEC GYM </p>
+        </div>
+        <div class="gym-content">
+            <img src="Gym 1.jpg" alt="">
+            <p> ADJOSEC GYM </p>
+        </div>
+        <div class="gym-content">
+            <img src="Gym 3.jpg" alt="">
+            <p> ADJOSEC GYM </p>
+        </div>   
+    </div>
+<br><br>
+<h1 id="hotel"> HOTEL GALLERY </h1>
+    <div class="gym" data-aos="zoom-in">
+        <div class="gym-content">
+            <img src="Gym 3.jpg" alt="">
+            <p> @ ADJOSEC HOTEL </p>
+        </div>
+        <div class="gym-content">
+            <img src="Gym 1.jpg" alt="">
+            <p> @ ADJOSEC HOTEL </p>
+        </div>
+        <div class="gym-content">
+            <img src="Gym 1.jpg" alt="">
+            <p> @ ADJOSEC HOTEL </p>
+        </div>
+        <div class="gym-content">
+            <img src="Director 1.jpg" alt="">
+            <p> @ ADJOSEC HOTEL </p>
+        </div>
+        <div class="gym-content">
+            <img src="Gym 3.jpg" alt="">
+            <p> @ ADJOSEC HOTEL </p>
+        </div>
+        <div class="gym-content">
+            <img src="ADJOSEC Farm 1.jpg" alt="">
+            <p> @ ADJOSEC HOTEL </p>
+        </div>
+        <div class="gym-content">
+            <img src="ADJOSEC Farm 2.jpg" alt="">
+            <p> @ ADJOSEC HOTEL </p>
+        </div>
+        <div class="gym-content">
+            <img src="Gym 1.jpg" alt="">
+            <p> @ ADJOSEC HOTEL </p>
+        </div>
+        <div class="gym-content">
+            <img src="Director 1.jpg" alt="">
+            <p> @ ADJOSEC HOTEL </p>
+        </div>
+        <div class="gym-content">
+            <img src="Gym 3.jpg" alt="">
+            <p> @ ADJOSEC HOTEL </p>
+        </div>
+        <div class="gym-content">
+            <img src="ADJOSEC Farm 1.jpg" alt="">
+            <p> @ ADJOSEC HOTEL </p>
+        </div>
+        <div class="gym-content">
+            <img src="ADJOSEC Farm 2.jpg" alt="">
+            <p> @ ADJOSEC HOTEL </p>
+        </div>
+        <div class="gym-content">
+            <img src="Gym 1.jpg" alt="">
+            <p> @ ADJOSEC HOTEL </p>
+        </div>
+        <div class="gym-content">
+            <img src="Director 1.jpg" alt="">
+            <p> @ ADJOSEC HOTEL </p>
+        </div>
+        <div class="gym-content">
+            <img src="Gym 3.jpg" alt="">
+            <p> @ ADJOSEC HOTEL </p>
+        </div>
+        <div class="gym-content">
+            <img src="ADJOSEC Farm 1.jpg" alt="">
+            <p> @ ADJOSEC HOTEL </p>
+        </div>
+        <div class="gym-content">
+            <img src="ADJOSEC Farm 2.jpg" alt="">
+            <p> @ ADJOSEC HOTEL </p>
+        </div>
+        <div class="gym-content">
+            <img src="Gym 1.jpg" alt="">
+            <p> @ ADJOSEC HOTEL </p>
+        </div>
+        <div class="gym-content">
+            <img src="Director 1.jpg" alt="">
+            <p> @ ADJOSEC HOTEL </p>
+        </div>
+        <div class="gym-content">
+            <img src="Gym 3.jpg" alt="">
+            <p> @ ADJOSEC HOTEL </p>
+        </div>
+        <div class="gym-content">
+            <img src="ADJOSEC Farm 1.jpg" alt="">
+            <p> @ ADJOSEC HOTEL </p>
+        </div>
+        <div class="gym-content">
+            <img src="ADJOSEC Farm 2.jpg" alt="">
+            <p> @ ADJOSEC HOTEL </p>
+        </div>
+        <div class="gym-content">
+            <img src="Gym 1.jpg" alt="">
+            <p> @ ADJOSEC HOTEL </p>
+        </div>
+        <div class="gym-content">
+            <img src="Director 1.jpg" alt="">
+            <p> @ ADJOSEC HOTEL </p>
+        </div>
+        <div class="gym-content">
+            <img src="Gym 3.jpg" alt="">
+            <p> @ ADJOSEC HOTEL </p>
+        </div>
+        <div class="gym-content">
+            <img src="ADJOSEC Farm 1.jpg" alt="">
+            <p> @ ADJOSEC HOTEL </p>
+        </div>
+        <div class="gym-content">
+            <img src="ADJOSEC Farm 2.jpg" alt="">
+            <p> @ ADJOSEC HOTEL </p>
+        </div>
+        <div class="gym-content">
+            <img src="Gym 1.jpg" alt="">
+            <p> @ ADJOSEC HOTEL </p>
+        </div>
+        <div class="gym-content">
+            <img src="Director 1.jpg" alt="">
+            <p> @ ADJOSEC HOTEL </p>
+        </div>
+        <div class="gym-content">
+            <img src="Gym 3.jpg" alt="">
+            <p> @ ADJOSEC HOTEL </p>
+        </div>
+        <div class="gym-content">
+            <img src="ADJOSEC Farm 1.jpg" alt="">
+            <p> @ ADJOSEC HOTEL </p>
+        </div>
+        <div class="gym-content">
+            <img src="ADJOSEC Farm 2.jpg" alt="">
+            <p> @ ADJOSEC HOTEL </p>
+        </div>
+        <div class="gym-content">
+            <img src="Gym 1.jpg" alt="">
+            <p> @ ADJOSEC HOTEL </p>
+        </div>
+        <div class="gym-content">
+            <img src="Director 1.jpg" alt="">
+            <p> @ ADJOSEC HOTEL </p>
+        </div>
+        <div class="gym-content">
+            <img src="Gym 3.jpg" alt="">
+            <p> @ ADJOSEC HOTEL </p>
+        </div>
+        <div class="gym-content">
+            <img src="ADJOSEC Farm 1.jpg" alt="">
+            <p> @ ADJOSEC HOTEL </p>
+        </div>
+        <div class="gym-content">
+            <img src="ADJOSEC Farm 2.jpg" alt="">
+            <p> @ ADJOSEC HOTEL </p>
+        </div>
+        <div class="gym-content">
+            <img src="Gym 1.jpg" alt="">
+            <p> @ ADJOSEC HOTEL </p>
+        </div>
+        <div class="gym-content">
+            <img src="Director 1.jpg" alt="">
+            <p> @ ADJOSEC HOTEL </p>
+        </div>
+        <div class="gym-content">
+            <img src="Gym 3.jpg" alt="">
+            <p> @ ADJOSEC HOTEL </p>
+        </div>  
+    </div> <br>
+
+    <h1 id="contact"> CONTACT </h1>
+    <div class="contact-main">
+        <div class="contact-content-one" data-aos="fade-right">
+            <img src="Director 1.jpg">
+        </div>
+
+        <div class="contact-content-two" data-aos="fade-left"> <br>
+            <b> Connect to us throught the following means... <br><br>
+                We are a call away from you. <br><br> 
+                <i> Contact/Whatsapp us at: </i> <br> 
+                (+233) 202 168 170  <br> (+233) 533 480 202 <br><br> 
+                <i> Email Us at: </i> <br> 
+                <a href="" style="text-decoration: none;" id="email"> adjosecwholesale@gmail.com </a>
+            </b>
+        </div>
+    </div>
+<br><br>
+
+<footer>
+  <ul>
+    <li> <a href="#"> About </a></li>
+    <li> <a href="#"> &2025 Adjosec Investment Ltd. </a> </li>
+    <li> <a href="#"> <i> All Rights Reserved </i> </a> </li>
+  </ul>  
+</footer>
+    
+
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>  
+  <script>
+  AOS.init();
+</script>
+</body>
+</html>
